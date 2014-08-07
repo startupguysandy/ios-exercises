@@ -14,6 +14,7 @@
     NSString *itemToReturn;
 
     /* WORK HERE */
+    /* Completed this by accident for last exercise, resubmitting */
     
     if(dollars >= 1000000000) {
         itemToReturn = @"have The Big Apple";
