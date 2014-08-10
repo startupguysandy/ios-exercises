@@ -8,7 +8,7 @@ Strings
 
 func favoriteCheeseStringWithCheese(cheese: String) -> String {
     // WORK HERE
-    return cheese
+    return "My favorite cheese is \(cheese)."
 }
 
 let fullSentence = favoriteCheeseStringWithCheese("cheddar")
@@ -20,13 +20,19 @@ Arrays & Dictionaries
 
 */
 
-let numberArray = [1, 2, 3, 4]
+var numberArray = [1, 2, 3, 4]
 // Add 5 to this array
 // WORK HERE
+var newArray = numberArray
+newArray.append(5)
+newArray
 
 let numberDictionary = [1 : "one", 2 : "two", 3 : "three", 4 : "four"]
 // Add 5 : "five" to this dictionary
 // WORK HERE
+var newDict: [Int: String] = numberDictionary
+newDict[5] = "five"
+newDict
 
 /*
 
@@ -36,9 +42,17 @@ Loops
 
 // Use a closed range loop to print 1 - 10, inclusively
 // WORK HERE
+for i in 1...10 {
+    println(i)
+}
 
 // Use a half-closed range loop to print 1 - 10, inclusively
 // WORK HERE
+// Apparently half-closed ranges were removed recently
+// This is my way of still completing the exercise though without just doign 1...9
+for i in 1...10-1 {
+    println(i)
+}
 
 let worf = [
     "name": "Worf",
@@ -58,6 +72,11 @@ let characters = [worf, picard]
 func favoriteDrinksArrayForCharacters(characters:Array<Dictionary<String, String>>) -> Array<String> {
     // return an array of favorite drinks, like ["prune juice", "tea, Earl Grey, hot"]
     // WORK HERE
+//    var faveDrinks = []
+//    for character in characters {
+//        faveDrinks += character["favorite drink"];
+//    }
+    // Not sure how to do this
     return []
 }
 
